@@ -3,7 +3,7 @@ import { Helper } from '../../utils/helper';
 import { RandomDataUtil } from '../../utils/dataGenerator';
 
 test.describe('Customer shopping journey @master', () => {
-  test('registers, logs in again, searches for a product, adds it to cart, and validates totals', async ({
+  test('registers, logs in again, searches for a product, adds it to cart, and validates totals @e2e', async ({
     page,
     homePage,
     registerPage,
@@ -55,3 +55,4 @@ test.describe('Customer shopping journey @master', () => {
     await expect(page.locator('body')).not.toContainText('Error');
   });
 });
+
